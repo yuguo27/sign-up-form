@@ -1,22 +1,63 @@
-body{
-    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-position: left;
-    background-repeat: no-repeat;
-    height: 100vh;
+@font-face {
+    font-family: "norse";
+    src: url(./fonts/Norsebold.otf) format("opentype");
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.container{
+   display: flex;
+   min-height: 100vh;
+}
+
+.image{
+    width: 40%;
+    height: 100%;
     position: relative;
 }
 
-
-container{
-   background-color: white; 
-   background-position: right;
-   display: flex;
+/*section image background*/
+.image img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
 }
 
 
-register{
-    width: 70%;
-    height: 100%;
+.register{
+    width: 60%;
+    padding-right: 600px;
+    display: flex;
+    flex-direction: column;
 }
+
+.register .first-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.register .second-container{
+    background-color: white;
+    
+}
+
+
+span{
+    font-style: italic;
+}
+
+
 
 
