@@ -4,60 +4,184 @@
     font-display: swap;
 }
 
+
 * {
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 html,
 body {
     margin: 0;
-    height: 100%;
+    min-height: 100%;
     background-color: whitesmoke;
 }
 
-.container{
-   display: flex;
-   min-height: 100vh;
+:root{
+    --semi-transparent: rgba(35, 33, 33, 0.382);
+
 }
 
 .image{
-    width: 40%;
-    height: 100%;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-/*section image background*/
-.image img {
+.image img[src="./assets/leaf.avif"]{
     position: absolute;
-    inset: 0;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
+.brand {
+    top: 30%;
+    position: absolute;
+    width: 100%;
+    max-height: 120px;
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--semi-transparent);
+}
+.brand img{
+    height: 120px;
+}
+.brand h1{
+    color: white;
+    font-family: norse ;
+    font-size: 100px;
+    text-align: center;
+
+}
 
 
-.register{
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.image {
+    position: relative;
+    width: 40%;
+    min-height: 100vh;
+}
+
+.register {
     width: 60%;
-    padding-right: 600px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 100px 0;
+}
+
+ input:user-invalid{
+  border:1px solid red;
+}
+
+
+/*manque la partie avec le logo ici*/
+.register .first-container{
+    padding: 25px 25px;
+}
+
+.second-container {
+    background-color: white;
+    padding: 25px 25px 100px 25px;
+
     display: flex;
     flex-direction: column;
 }
 
-.register .first-container{
+form {
+    width: 100%;
+}
+
+.multiple-row {
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 200px;
+    gap: 50px;
+}
+
+
+.first-row,
+.second-row {
+    width: 300px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1{
     font-size: 20px;
-    font-weight: bold;
 }
-
-.register .second-container{
-    background-color: white;
-    
+.multiple-row div{
+    font-size: 15px;
 }
-
 
 span{
     font-style: italic;
 }
 
+input {
+  border: 2px solid #E5E7EB;
+  padding: 5px;
+  border-radius: 5px;
+  height: 40px;
+}
+
+input:focus{
+    border: 2px solid blue;
+}
+
+/*definir méthode champs incomplet pour la navigation*/
+
+.third-container{
+    padding: 25px 25px;
+}
 
 
+.third-container a:visited {
+    color: purple;
+}
 
+.third-container a:hover {
+    color: blue;
+}
+
+.third-container a{
+    color: #596D48;
+    font-weight: bold;
+}
+
+button{
+    color: white;
+    background-color: #596D48;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #596D48;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.third-container p{
+    font-weight: lighter;
+}
+
+
+.image p{
+    position: absolute;
+    font-weight: lighter;
+    color: white;
+    font-size: 10px;
+    align-self: flex-end;
+}
+
+.image a{
+    color: white;
+}

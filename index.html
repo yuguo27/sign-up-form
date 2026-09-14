@@ -12,7 +12,12 @@
     <div class="container">
         <div class="image">
             <img src="./assets/leaf.avif" alt="picture with greate green leaf"></img>
-            <div class="logo"></div>
+            
+            <div class="brand">
+                <img src="./assets/odin-lined.png"></img>
+                <h1>ODIN</h1>
+            </div>
+            <p>Photo by <a href="https://unsplash.com/de/fotos/grune-blattpflanze-in-nahaufnahme-25xggax4bSA">Halie West</a> On unsplash</p>
         </div>
         <div class="register">
             <div class="first-container">
@@ -25,9 +30,48 @@
                     You <span>know</span> you want to.
                 </p>
             </div>
+
             <div class="second-container">
-                
+                <h1>Let's do this</h1>
+                <form action="#" id="signup-form" method="post">
+                    <div class="multiple-row">
+                        <div class="first-row">
+                            <label for="user_first">
+                                First Name:
+                                <input type="text" id="user_first" name="user_first" required>
+                            </label>
+                            <label for="user_email">
+                                Email:
+                                <input type="email" id="user_email" name="user_email" required>
+                            </label>
+                            <label for="user_password">
+                                Password:
+                                <input type="password" id="user_password" name="user_password" required>
+                            </label>
+                        </div>
+                        <div class="second-row">
+                            <label for="user_last">
+                                Last Name:
+                                <input type="text" id="user_last" name="user_last" required>
+                            </label>
+                            <label for="user_phone">
+                                Phone Number:
+                                <input type="tel" id="user_phone" name="user_phone" required>
+                            </label>
+                            <label for="user_confirmpwd">
+                                Confirm Password:
+                                <input type="password" id="user_confirmpwd" name="user_confirmpwd" required>
+                            </label>
+                        </div>
+                    </div>
+                </form>
             </div>
+
+            <div class="third-container">
+                <button type="submit" form="signup-form">Create Account</button>
+                <p>Already have an account ? <a href=https://">Log in</a></p>
+            </div>
+
         </div>
     </div>
 </body>
